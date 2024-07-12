@@ -1,5 +1,10 @@
 import Image from "next/image";
 
+/* The reason why p-24 works and not p-25 is because p-24 is class utility present in tailwind css
+p-24 does exists and when i ctrl+s with p-25, the layout of the website changes and write anything else (say p-22 or p-20), it just
+remains the same
+The layout of p-24 is getting the padding from top and bottom of the web page */
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
