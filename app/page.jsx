@@ -1,4 +1,6 @@
+"use client";
 import React from 'react';
+// import { useNavigate } from 'react-router-dom';
 //task4
 export const page = () => {
   // const navigate = useNavigate();
@@ -21,13 +23,13 @@ export const page = () => {
           Good Job Pranav!
         </p>
       </div>
-      {/* <button
-        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition duration-300"
-        onClick={() => navigate('/app/profile')}
-      >
-        Go to Profile
-      </button> */}
-    </div>
+        <a href="/profile/1" style={{ textDecoration: 'none' }}>
+          <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition duration-300"> Go to Profile </button>
+        </a>
+        <a href="/settings/1" style={{ textDecoration: 'none' }}>
+          <button className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700 transition duration-300"> Go to Settings </button>
+        </a>
+      </div>
     </>
   );
 };
