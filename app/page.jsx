@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Button from "@components/Button";
 // import { useNavigate } from 'react-router-dom';
 //task4
 export const page = () => {
@@ -29,6 +30,7 @@ export const page = () => {
         <a href="/settings/1" style={{ textDecoration: 'none' }}>
           <button className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700 transition duration-300"> Go to Settings </button>
         </a>
+        < Button />
       </div>
     </>
   );
