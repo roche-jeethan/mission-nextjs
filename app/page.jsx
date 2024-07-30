@@ -1,12 +1,15 @@
 "use client";
 import React from 'react';
 import Button from "@components/Button";
+import NavBar from '@/components/NavBar';
+import Footer from '@/components/Footer';
 // import { useNavigate } from 'react-router-dom';
 //task4
 export const page = () => {
   // const navigate = useNavigate();
   return (
     <>
+    <NavBar />
     <div className="flex flex-col items-center justify-center space-y-4">
       <div className="z-10 max-w-5xl w-full text-center font-serif text-sm" style={{ fontFamily: "'Merriweather', serif" }}>
         <h1 className="text-4xl md:text-6xl font-bold my-4" style={{ fontFamily: "'Great Vibes', cursive" }}>Jeethan Roche</h1>
@@ -32,6 +35,7 @@ export const page = () => {
         </a>
         < Button />
       </div>
+      <Footer />
     </>
   );
 };
