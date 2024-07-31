@@ -1,12 +1,16 @@
 import Link from 'next/link';
+
 export default function NavBar() {
   return (
     <nav className="bg-gray-800 p-4 flex space-x-4">
-      <Link href="/profile/1">
-        <button className="px-4 py-2 bg-orange-500 text-white rounded hover:bg-black-700 transition duration-300">Profile</button>
+      <Link href="/">
+        <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition duration-300">Home</button>
       </Link>
-      <Link href="/settings/1">
-        <button className="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-black-700 transition duration-300">Settings</button>
+      <Link href="/profiles">
+        <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition duration-300">Profile</button>
+      </Link>
+      <Link href="/login">
+        <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition duration-300">Login</button>
       </Link>
     </nav>
   );
